@@ -78,25 +78,38 @@ Ruby Motion  | Native
 
 ---
 
+# JSX
+
+React | React Native
+-------|--------
+\<div> |  \<View>
+\<span> | \<Text>
+\<img> |  \<Image>
+
+---
+
 #:innocent: React JS
 
 ```
 import React from 'react';
-import ReactDom    from 'react-dom';
+import ReactDom from 'react-dom';
 
 class App extends React.Component {
-  <div>
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+  render() {
+    return(
+      <div>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    )
+  }
 }
 
 ReactDom.render(
   <App />,
   document.getElementById('app')
 );
-
 ```
 
 ---
@@ -114,11 +127,15 @@ import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 
 class App extends React.Component {
-  <div>
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+  render() {
+    return(
+      <View>
+        <Header />
+        <Main />
+        <Footer />
+      </View>
+    )
+  }
 }
 
 AppRegistry.registerComponent(
@@ -128,13 +145,26 @@ AppRegistry.registerComponent(
 
 ---
 
+#:innocent: React Native
+
+![](https://i.gyazo.com/53732671566fafdcb58978cb2f76c044.png)
+
+---
+
+#:innocent:
+
+## Reactによってコンポーネントを定義
+## →ReactDomでブラウザへ書き込み
+## →ネイティブUIへの書き込みはReactNativeの役割となる
+
+---
+
 # :innocent: 開発フロー
 
 ---
 
 # Getting Started
-
-```
+```sh
 # Installing Dependencies
 
 brew install node
@@ -149,15 +179,27 @@ react-native run-ios
 ---
 
 # Develop
-![](https://scontent.xx.fbcdn.net/v/t31.0-8/18489479_1320135324737082_7896970863086498350_o.jpg?oh=525fabc6a8877647cb7f71d974a2bb8b&oe=59764BE2)
+![](https://i.gyazo.com/8c022d2cf9b35b484d90566ca5613f4e.png)
+
+---
+
+# Develop
+![](https://i.gyazo.com/b4553bebca55d4fb68c0666fc9e690f6.png)
+
+---
+
+# Develop
+![](https://i.gyazo.com/670ab846562bdfe145990e968969d74a.png)
+
+---
+
+# Develop
+![](https://i.gyazo.com/240d8ff1878e20c6e1f54647506b6e37.png)
 
 ---
 
 # いいね!いいねー！
 
----
-
-標準ライブラリ WEB APIもネイティブに再実装されている!!ワーイ!!
 
 ---
 
@@ -165,12 +207,13 @@ react-native run-ios
 
 ---
 
-# App
+# 参考実装
 
-このアプリを参考に実装
-
+![](https://i.gyazo.com/e2e8a22eb42d69c3a64467cbaee67ac8.png)
 [https://github.com/naoya/HBFav2](https://github.com/naoya/HBFav2)
 
 ---
+
+# DEMO
 
 ---
