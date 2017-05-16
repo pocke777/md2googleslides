@@ -7,58 +7,70 @@
 
 # アジェンダ
 
-* Introduction
-* クロスプラットフォームの比較
-* ReactとReact Native
+* React Native is...
 * 開発フロー
 * 実践
 
 ---
 
+# Introduction
+## [Learn once, write anywhere](https://facebook.github.io/react-native/)
+
+---
+
+![](https://i.gyazo.com/5a8fbcc12b665a97021b80b84013b5b2.png){.background}
+# [react-native-macos](https://github.com/ptmt/react-native-macos)
+
+---
+
+![](https://i.gyazo.com/f25ef78d0bcd6ffdaf4166aa43df09b9.png){.background}
+# [react-native-windows](https://github.com/Microsoft/react-native-windows)
+
+---
+
 # :innocent: React Native is
 
-# [Learn once, write anywhere](https://facebook.github.io/react-native/)
+* WEB開発のスキルセットでネイティブアプリ開発に乗り込める(たまにネイティブ特有の問題にはぶつかる)
+* NPMのエコシステムに乗っかれる(標準APIの制限はあり)
+* Native UI (ハイパフォーマンス)
+* 開発サポートが嬉しい
 
----
-
-# :innocent:
-
-* JavaScript と Reactでアプリをビルド
-* Nativeで作動
-* コンポーネント指向
-* CSSっぽい Style Layout
-* Objective-C, Swift, Javaなどのネイティブコードのインポート可能
-* Nodeのエコシステム(ReactNativeがサポートしている標準APIしか使っていない場合は)
-* 嬉しい開発サポート
-
-<span style="color:red"> TODO: もっと増やす  </span>
-
----
-
-# Nativeで作動?
+[Polyfills](https://facebook.github.io/react-native/docs/javascript-environment.html)
 
 ---
 
 # アーキテクチャ
 
-![](https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-0/p600x600/18451640_1320297154720899_4206600920678887957_o.jpg?oh=d3748a85ccc193ed39560acca53fd8e0&oe=59BA49BD)
-
-[http://www.reactnative.com/under-the-hood-of-react-native/](http://www.reactnative.com/under-the-hood-of-react-native/)
-
-<!--
-React NativeはJavaScriptCoreのランタイム上で動きNativeのAPIを動かす
-Ruby Motionもランタイム上で動作しNativeのAPIを呼び出すが、RubyコードはLLVMによってバイトコードへとコンパイルされている
--->
 ---
 
-#:innocent: クロスプラットフォームの比較
+# :innocent:
+## JS → Bridge → Native UI
 
-Frame Work | アーキテクチャ
+![](https://i.gyazo.com/db166ee7e942aec639dd76162f504577.png)
+[https://www.ibm.com/developerworks/jp/mobile/library/mo-bluemix-react-native-ios8/](https://www.ibm.com/developerworks/jp/mobile/library/mo-bluemix-react-native-ios8/)
+
+---
+# Data Flow
+
+![](https://i.gyazo.com/20be933885d5c2bc85deed7350550fbe.png)
+[https://speakerdeck.com/frantic/react-native-under-the-hood](https://speakerdeck.com/frantic/react-native-under-the-hood)
+
+---
+# Data Flow
+
+![](https://i.gyazo.com/9db59f2571eef648cc4ee8514fd48b40.png)
+[https://speakerdeck.com/frantic/react-native-under-the-hood](https://speakerdeck.com/frantic/react-native-under-the-hood)
+
+---
+
+# Other Cross Platform
+
+Frame Work | Type
 -------|--------
-React Native   | Native
+React Native | Native
 NativeScript | Native
-PhoneGap   | WebView
-Ruby Motion | Native
+PhoneGap     | WebView
+Ruby Motion  | Native
 
 ---
 
@@ -116,13 +128,6 @@ AppRegistry.registerComponent(
 
 ---
 
-#:innocent: React Native
-
-JavaScript → ReactNative → iOS UI / Android UI
-![](https://scontent.xx.fbcdn.net/v/t1.0-9/18527664_1320098144740800_5720499259349225849_n.jpg?oh=b7aa9eaa4557f0e3db1475dc4a975429&oe=59B39E80)
-
----
-
 # :innocent: 開発フロー
 
 ---
@@ -153,8 +158,6 @@ react-native run-ios
 ---
 
 標準ライブラリ WEB APIもネイティブに再実装されている!!ワーイ!!
-
-[Polyfills](https://facebook.github.io/react-native/docs/javascript-environment.html)
 
 ---
 
