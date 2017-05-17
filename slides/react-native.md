@@ -155,7 +155,7 @@ AppRegistry.registerComponent(
 
 ## Reactによってコンポーネントを定義
 ## →ReactDomでブラウザへ書き込み
-## →ネイティブUIへの書き込みはReactNativeの役割となる
+## →ネイティブUIへの書き込み → ReactNativeへ
 
 ---
 
@@ -200,7 +200,6 @@ react-native run-ios
 
 # いいね!いいねー！
 
-
 ---
 
 #:innocent: 実践 :innocent:
@@ -211,6 +210,15 @@ react-native run-ios
 
 ![](https://i.gyazo.com/e2e8a22eb42d69c3a64467cbaee67ac8.png)
 [https://github.com/naoya/HBFav2](https://github.com/naoya/HBFav2)
+
+---
+
+# 各レイヤのポイント
+  | ポイント
+-------|--------
+ドメイン   | Viewと疎結合な部分はほとんどWebアプリと共通化が可能。Fluxアーキテクチャの利用もOK
+View       | ReactNativeの提供するComponentを利用/Styleはサポートされている![プロパティ](https://github.com/vhpoet/react-native-styling-cheat-sheet)で実装
+Navigation | Routerを使用して実装
 
 ---
 
