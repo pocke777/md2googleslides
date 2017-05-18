@@ -1,6 +1,6 @@
 ---
 
-# :innocent:  React Native :innocent:
+# :innocent:  React Native Tour :innocent:
 ## ファイ部 BKB
 
 ---
@@ -19,12 +19,12 @@
 ---
 
 ![](https://i.gyazo.com/5a8fbcc12b665a97021b80b84013b5b2.png){.background}
-# [react-native-macos](https://github.com/ptmt/react-native-macos)
+# [macos](https://github.com/ptmt/react-native-macos)
 
 ---
 
 ![](https://i.gyazo.com/f25ef78d0bcd6ffdaf4166aa43df09b9.png){.background}
-# [react-native-windows](https://github.com/Microsoft/react-native-windows)
+# [windows](https://github.com/Microsoft/react-native-windows)
 
 ---
 
@@ -153,9 +153,7 @@ AppRegistry.registerComponent(
 
 #:innocent:
 
-## Reactによってコンポーネントを定義
-## →ReactDomでブラウザへ書き込み
-## →ネイティブUIへの書き込み → ReactNativeへ
+## Reactによってコンポーネントを定義→ReactDomでブラウザへ書き込み →ネイティブUIへの書き込み → ReactNativeへ
 
 ---
 
@@ -214,7 +212,7 @@ react-native run-ios
 ---
 
 # 各レイヤのポイント
-  | ポイント
+レイヤ  | ポイント
 -------|--------
 ドメイン   | Viewと疎結合な部分はほとんどWebアプリと共通化が可能。Fluxアーキテクチャの利用もOK
 View       | ReactNativeの提供するComponentを利用/Styleはサポートされている![プロパティ](https://github.com/vhpoet/react-native-styling-cheat-sheet)で実装
