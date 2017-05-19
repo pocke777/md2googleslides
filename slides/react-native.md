@@ -1,6 +1,6 @@
 ---
 
-# :innocent:  React Native Tour :innocent:
+#  React Native Tour
 ## ファイ部 BKB
 
 ---
@@ -153,6 +153,11 @@ AppRegistry.registerComponent(
 
 #:innocent:
 
+## Reactはノードツリーの差分計算を行っているライブラリでレンダリング先がウェブであろうとアプリであろうとお構いなし
+
+----
+#:innocent:
+
 ## Reactによってコンポーネントを定義→ReactDomでブラウザへ書き込み →ネイティブUIへの書き込み → ReactNativeへ
 
 ---
@@ -215,7 +220,7 @@ react-native run-ios
 レイヤ  | ポイント
 -------|--------
 ドメイン   | Viewと疎結合な部分はほとんどWebアプリと共通化が可能。Fluxアーキテクチャの利用もOK
-View       | ReactNativeの提供するComponentを利用/Styleはサポートされている![プロパティ](https://github.com/vhpoet/react-native-styling-cheat-sheet)で実装
+View       | ReactNativeの提供するComponentを利用/Styleはサポートされている[プロパティ](https://github.com/vhpoet/react-native-styling-cheat-sheet)で実装
 Navigation | Routerを使用して実装
 
 ---
